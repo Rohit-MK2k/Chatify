@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-animation {
+	background: linear-gradient(-45deg, #ee7752, white, #23a6d5, white);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* height: 50vh; */
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.reg-width{
+	width: 26rem;
+}
+.width-name{
+	width: 49%;
+}
